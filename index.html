@@ -33,19 +33,27 @@
 
 <body>
   <h1>Dynamic Viewport examples</h1>
-  <label>
-    Select red box height:
-    <select onchange="document.getElementsByClassName('box')[0].style.height = this.value">
-      <option>200px</option>
-      <option>100%</option>
-      <option>100vh</option>
-      <option>100dvh</option>
-      <option>100lvh</option>
-      <option>100svh</option>
-      <option>100vmin</option>
-      <option>100vmax</option>
-    </select>
-  </label>
+  <div>
+    <label>
+      Select red box height:
+      <select onchange="document.getElementsByClassName('box')[0].style.height = this.value">
+        <option>200px</option>
+        <option>100%</option>
+        <option>100vh</option>
+        <option>100dvh</option>
+        <option>100lvh</option>
+        <option>100svh</option>
+        <option>100vmin</option>
+        <option>100vmax</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label>
+      Focus textbox to bring up keyboard:
+      <input inputmode="decimal" />
+    </label>
+  </div>
   <div class="box"></div>
 </body>
 
