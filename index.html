@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Viewport - dvh</title>
+  <style>
+    body {
+      background-color: #3b4652;
+      font-family: sans-serif;
+      color: white;
+      margin: 0;
+    }
+
+    main {
+      border: 5px dashed #dc281e;
+      box-sizing: border-box;
+      padding: 1rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Dynamic Viewport examples</h1>
+    <label>
+      Select red box height:
+      <select onchange="document.getElementsByTagName('main')[0].style.height = this.value">
+        <option></option>
+        <option>100vh</option>
+        <option>100dvh</option>
+        <option>100lvh</option>
+        <option>100svh</option>
+        <option>100vmin</option>
+        <option>100vmax</option>
+      </select>
+    </label>
+  </main>
+</body>
+
+</html>
